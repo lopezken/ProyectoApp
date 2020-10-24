@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="nombre_logo1">Trivia</string>
+    <string name="nombre_logo2">Game</string>
+    <string name="descripcion">Logo</string>
+   <string name="logo_ciencia">Ciencia</string>
+</resources>
