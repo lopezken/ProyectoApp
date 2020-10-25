@@ -1,6 +1,5 @@
 package com.example.proyecto;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -24,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
         Animation animacion1= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
         Animation animacion2= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo);
 
-        TextView bytextview = findViewById(R.id.By_textView);
+        TextView trtextview = findViewById(R.id.text_tr);
+        TextView ivitextview = findViewById(R.id.txt_via);
+        TextView atextview = findViewById(R.id.txt_a);
         TextView test_textview =findViewById(R.id.Test_textView);
         ImageView logoimage= findViewById(R.id.logo);
 
-        bytextview.setAnimation(animacion2);
+        trtextview.setAnimation(animacion2);
+        ivitextview.setAnimation(animacion2);
+        atextview.setAnimation(animacion2);
         test_textview.setAnimation(animacion2);
         logoimage.setAnimation(animacion1);
 
@@ -39,6 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 2000);
+        }, 2250);
     }
 }
