@@ -1,8 +1,12 @@
 package com.example.proyecto;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Pair;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -39,8 +43,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i = new Intent(MainActivity.this, Inicio.class);
-                startActivity(i);
-                finish();
+                Pair[] pairs = new Pair[2];
+                pairs[0]= new Pair<View, String>(logoimage,"logoImage");
+                pairs[1]= new Pair<View, String>(test_textview, "textTrans");
+                if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.LOLLIPOP){
+                    ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
+                    startActivity(i,options.toBundle());
+                }else{
+                    startActivity(i);
+                    finish();
+                }
+
             }
         }, 2250);
     }
