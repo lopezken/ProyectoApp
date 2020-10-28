@@ -5,7 +5,7 @@
     <string name="nombre_logo1_3">a</string>
     <string name="nombre_logo2">Game</string>
     <string name="descripcion">Logo</string>
-   <string name="logo_ciencia">Ciencia</string>
+    <string name="logo_ciencia">Ciencia</string>
     <string name="bienvenido_a_trivia_game">Bienvenido a Trivia Game</string>
     <string name="inicia_sesion_para_continuar">Inicia sesion para continuar</string>
     <string name="correo">Correo</string>
@@ -13,5 +13,6 @@
     <string name="has_olvidado_tu_contrase_a">¿Has olvidado tu contraseña?</string>
     <string name="inicio">INICIO</string>
     <string name="eres_nuevo_registrate">¿Eres nuevo? Registrate!</string>
+    <string name="categoria">Categoria</string>
 
 </resources>
