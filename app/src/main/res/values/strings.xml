@@ -14,5 +14,12 @@
     <string name="inicio">INICIO</string>
     <string name="eres_nuevo_registrate">¿Eres nuevo? Registrate!</string>
     <string name="categoria">Categoria</string>
+    <string name="logo_matematica">Matemática</string>
+    <string name="logo_tecnologia">Tecnología</string>
+    <string name="logo_musica">Música</string>
+    <string name="nombre">¿Cuál es tu Nombre?</string>
+    <string name="edad">¿Cuál es tu Edad?</string>
+    <string name="btnAceptar">Aceptar</string>
+
 
 </resources>

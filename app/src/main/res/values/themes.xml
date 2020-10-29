@@ -14,4 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="android:windowContentTransitions">true</item>
     </style>
+    <style name="botonCategoria" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
 </resources>
