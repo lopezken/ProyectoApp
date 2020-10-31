@@ -15,7 +15,7 @@ public class DatosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
-        txtNombre = findViewById(R.id.txt_nombre);
+        txtNombre = findViewById(R.id.txtNombreUsuario);
         NumberPicker npedad= findViewById(R.id.npEdad);
         npedad.setMinValue(0);
         npedad.setMaxValue(100);

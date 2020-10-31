@@ -10,54 +10,43 @@
         android:id="@+id/imageButton3"
         android:layout_width="138dp"
         android:layout_height="128dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="464dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/descripcion"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/logotecno1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hard2" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="138dp"
         android:layout_height="128dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="36dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/descripcion"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logomate1" />
+        app:srcCompat="@drawable/medium2" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="138dp"
         android:layout_height="128dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="224dp"
+        android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/descripcion"
         android:outlineProvider="none"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ciencia" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="138dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="28dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/descripcion"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        app:srcCompat="@drawable/logomusic" />
+        app:srcCompat="@drawable/easy2" />
 
     <TextView
         android:id="@+id/textView"
@@ -71,59 +60,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/lbciencia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/happy_monkey"
-        android:text="@string/logo_ciencia"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
-        android:fontFamily="@font/happy_monkey"
-        android:text="@string/logo_matematica"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/happy_monkey"
-        android:text="@string/logo_tecnologia"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="64dp"
-        android:fontFamily="@font/happy_monkey"
-        android:text="@string/logo_musica"
-        android:textColor="#3F51B5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageView
         android:id="@+id/imageView3"
