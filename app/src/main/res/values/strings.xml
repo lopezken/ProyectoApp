@@ -20,6 +20,10 @@
     <string name="nombre">¿Cuál es tu Nombre?</string>
     <string name="edad">¿Cuál es tu Edad?</string>
     <string name="btnAceptar">Aceptar</string>
+    <string name="et_Nombre1">Nombre</string>
+    <string name="et_Nombre2">Nombre</string>
+    <string name="et_Edad">Edades</string>
+
 
 
 </resources>
