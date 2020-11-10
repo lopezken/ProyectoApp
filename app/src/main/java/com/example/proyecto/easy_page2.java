@@ -17,8 +17,7 @@ public class easy_page2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_page2);
 
-
-         Rb1 = findViewById(R.id.RB_1);
+        Rb1 = findViewById(R.id.RB_1);
         Rb2 = findViewById(R.id.RB_2);
         Rb3= findViewById(R.id.RB_3);
     }
@@ -31,8 +30,6 @@ public class easy_page2 extends AppCompatActivity {
         }
 
     }
-
-
     private void  validar(){
         String cad="Seleccionado: \n";
 

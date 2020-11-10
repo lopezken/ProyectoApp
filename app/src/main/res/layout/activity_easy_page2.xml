@@ -22,6 +22,7 @@
         android:layout_width="155dp"
         android:layout_height="63dp"
         android:layout_marginTop="72dp"
+        android:onClick="onclick"
         android:text="ACEPTAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:lottie_autoPlay="true"
-        app:lottie_fileName="22436-bright-gameboy.json"
+        app:lottie_fileName="gameboy.json"
         app:lottie_imageAssetsFolder="assets"
         app:lottie_loop="true" />
 
