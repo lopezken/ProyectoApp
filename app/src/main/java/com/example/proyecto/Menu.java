@@ -18,12 +18,8 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         tv1 = (TextView)findViewById(R.id.tv1);
-        tv2 = (TextView)findViewById(R.id.tv2);
         String dato = getIntent().getStringExtra("dato");
         tv1.setText("Hola "+ dato);
-
-        String edad = getIntent().getStringExtra("value");
-        tv2.setText("Tu edad es: "+ edad);
     }
     public void siguiente(View view){
         Intent i = new Intent(this,loanding.class);
