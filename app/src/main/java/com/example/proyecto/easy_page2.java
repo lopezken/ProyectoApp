@@ -2,6 +2,7 @@ package com.example.proyecto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorSpace;
 import android.os.Bundle;
@@ -36,5 +37,15 @@ public class easy_page2 extends AppCompatActivity {
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
         }
+
+
     }
+
+
+
+    public void Siguiente(View view){
+        Intent i = new Intent(this, easy_page3.class);
+        startActivity(i);
+    }
+
 }

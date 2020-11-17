@@ -54,12 +54,14 @@ public class easy_page1 extends AppCompatActivity {
 
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
+            Rb3.setBackgroundColor(Color.rgb(0,128,0));
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb2.isChecked()==true){
             Rb2.setBackgroundColor(Color.rgb(255,0,0));
+            Rb3.setBackgroundColor(Color.rgb(0,128,0));
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
@@ -72,6 +74,7 @@ public class easy_page1 extends AppCompatActivity {
         }
         else if (Rb4.isChecked()==true){
             Rb4.setBackgroundColor(Color.rgb(255,0,0));
+            Rb3.setBackgroundColor(Color.rgb(0,128,0));
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
