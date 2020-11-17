@@ -40,28 +40,43 @@ public class easy_page3 extends AppCompatActivity {
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
             Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
             Button boton = (Button) findViewById(R.id.aceptar4);
             boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button6);
+            boton2.setEnabled(true);
 
         }
         else if (Rb2.isChecked()==true){
             Rb2.setBackgroundColor(Color.rgb(255,0,0));
             Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
             Button boton = (Button) findViewById(R.id.aceptar4);
             boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button6);
+            boton2.setEnabled(true);
 
         }
         else if (Rb3.isChecked()==true){
             Rb3.setBackgroundColor(Color.rgb(255,0,0));
             Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
             Button boton = (Button) findViewById(R.id.aceptar4);
             boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button6);
+            boton2.setEnabled(true);
 
         }
         else if (Rb4.isChecked()==true){
             Rb4.setBackgroundColor(Color.rgb(0,128,0));
             Button boton = (Button) findViewById(R.id.aceptar4);
             boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button6);
+            boton2.setEnabled(true);
 
         }
 

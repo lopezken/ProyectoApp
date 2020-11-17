@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.graphics.ColorSpace;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 
 public class easy_page2 extends AppCompatActivity {
@@ -34,8 +35,38 @@ public class easy_page2 extends AppCompatActivity {
     private void  validar(){
         String cad="Seleccionado: \n";
 
-        if (Rb1.isChecked()==true){
+        if (Rb1.isChecked()==true)
+        {
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
+            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+
+            Button boton = (Button) findViewById(R.id.BTN_aceptar);
+            boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button3);
+            boton2.setEnabled(true);
+        }
+        if (Rb2.isChecked()==true)
+        {
+            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+
+            Button boton = (Button) findViewById(R.id.BTN_aceptar);
+            boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button3);
+            boton2.setEnabled(true);
+        }
+        if (Rb3.isChecked()==true)
+        {
+            Rb3.setBackgroundColor(Color.rgb(255,0,0));
+            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+
+
+            Button boton = (Button) findViewById(R.id.BTN_aceptar);
+            boton.setEnabled(false);
+
+            Button boton2 = (Button) findViewById(R.id.button3);
+            boton2.setEnabled(true);
         }
 
 
