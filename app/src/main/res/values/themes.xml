@@ -17,4 +17,7 @@
     <style name="botonCategoria" parent="Theme.AppCompat.Light">
         <item name="colorControlHighlight">@color/white</item>
     </style>
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">@color/purple_500</item>
+    </style>
 </resources>

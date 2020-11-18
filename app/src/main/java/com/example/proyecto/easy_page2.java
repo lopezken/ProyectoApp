@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.ColorSpace;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,7 +42,7 @@ public class easy_page2 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.BTN_aceptar);
             boton.setEnabled(false);
 
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
         if (Rb2.isChecked()==true)
@@ -53,7 +52,7 @@ public class easy_page2 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.BTN_aceptar);
             boton.setEnabled(false);
 
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
         if (Rb3.isChecked()==true)
@@ -65,7 +64,7 @@ public class easy_page2 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.BTN_aceptar);
             boton.setEnabled(false);
 
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
 

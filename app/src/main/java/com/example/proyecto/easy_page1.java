@@ -22,6 +22,7 @@ public class easy_page1 extends AppCompatActivity {
     private RadioButton Rb1,Rb2, Rb3, Rb4;
     private TextView textView;
     private CountDownTimer countDownTimer;
+    private Button boton,activar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,8 @@ public class easy_page1 extends AppCompatActivity {
         Rb2 = findViewById(R.id.Rb2);
         Rb3= findViewById(R.id.Rb3);
         Rb4= findViewById(R.id.Rb4);
+        boton = findViewById(R.id.aceptar);
+        activar = findViewById(R.id.btn_siguiente);
 
         textView = (TextView)findViewById(R.id.contador);
 
@@ -39,6 +42,8 @@ public class easy_page1 extends AppCompatActivity {
             }
 
             public void onFinish() {
+                boton.setEnabled(false);
+                activar.setEnabled(true);
                 AlertDialog.Builder builder = new AlertDialog.Builder(easy_page1.this);
                 builder.setTitle("Importante");
                 builder.setMessage("¡Su tiempo limite ha acabado! :c");
@@ -54,28 +59,25 @@ public class easy_page1 extends AppCompatActivity {
 
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb2.isChecked()==true){
             Rb2.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb3.isChecked()==true){
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb4.isChecked()==true){
             Rb4.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
+        activar.setEnabled(true);
     }
 
     public void siguiente(View view){
