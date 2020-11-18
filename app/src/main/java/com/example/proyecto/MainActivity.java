@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-
-
-
         //Animaciones
         Animation animacion1= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_arriba);
         Animation animacion2= AnimationUtils.loadAnimation(this,R.anim.desplazamiento_abajo);

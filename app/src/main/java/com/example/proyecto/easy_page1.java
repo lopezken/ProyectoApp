@@ -22,16 +22,19 @@ public class easy_page1 extends AppCompatActivity {
     private RadioButton Rb1,Rb2, Rb3, Rb4;
     private TextView textView;
     private CountDownTimer countDownTimer;
+    private Button boton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_easy_page1);
         Rb1 = findViewById(R.id.Rb1);
         Rb2 = findViewById(R.id.Rb2);
         Rb3= findViewById(R.id.Rb3);
         Rb4= findViewById(R.id.Rb4);
+        boton = findViewById(R.id.aceptar);
 
-        textView = (TextView)findViewById(R.id.contador);
+        textView = findViewById(R.id.contador);
 
             countDownTimer = new CountDownTimer(25000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -39,12 +42,14 @@ public class easy_page1 extends AppCompatActivity {
             }
 
             public void onFinish() {
+                boton.setEnabled(false);
                 AlertDialog.Builder builder = new AlertDialog.Builder(easy_page1.this);
-                builder.setTitle("Importante");
+                builder.setTitle("Aviso");
                 builder.setMessage("¡Su tiempo limite ha acabado! :c");
                 builder.setPositiveButton("OK",null);
                 builder.create();
                 builder.show();
+
             }
         }.start();
 
@@ -54,25 +59,21 @@ public class easy_page1 extends AppCompatActivity {
 
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb2.isChecked()==true){
             Rb2.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb3.isChecked()==true){
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
         else if (Rb4.isChecked()==true){
             Rb4.setBackgroundColor(Color.rgb(255,0,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
         }
