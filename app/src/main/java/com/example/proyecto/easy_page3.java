@@ -30,7 +30,6 @@ public class easy_page3 extends AppCompatActivity {
         Rb4 = findViewById(R.id.Rb4);
 
 
-
     }
 
 
