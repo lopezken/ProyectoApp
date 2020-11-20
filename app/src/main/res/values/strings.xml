@@ -24,6 +24,7 @@
     <string name="et_Nombre2">Nombre</string>
     <string name="et_Edad">Edades</string>
     <string name="mensaje">No se, cualquier cosa</string>
+    <string name="titulo1">¿Qué número sigue por lógica a esta serie?</string>
 
 
 </resources>

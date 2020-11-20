@@ -22,7 +22,6 @@ public class easy_page1 extends AppCompatActivity {
     private RadioButton Rb1,Rb2, Rb3, Rb4;
     private TextView textView;
     private CountDownTimer countDownTimer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
