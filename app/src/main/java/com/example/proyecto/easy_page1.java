@@ -58,7 +58,7 @@ public class easy_page1 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
         else if (Rb2.isChecked()==true){
@@ -67,7 +67,7 @@ public class easy_page1 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
         else if (Rb3.isChecked()==true){
@@ -75,7 +75,7 @@ public class easy_page1 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
         else if (Rb4.isChecked()==true){
@@ -84,7 +84,7 @@ public class easy_page1 extends AppCompatActivity {
             Button boton = (Button) findViewById(R.id.aceptar);
             boton.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.button3);
+            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
             boton2.setEnabled(true);
         }
     }

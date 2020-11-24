@@ -3,6 +3,7 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -80,6 +81,13 @@ public class easy_page3 extends AppCompatActivity {
         }
 
     }
+
+
+    public void Siguiente(View view){
+        Intent i = new Intent(this, easy_page4.class);
+        startActivity(i);
+    }
+
 
 
 }
