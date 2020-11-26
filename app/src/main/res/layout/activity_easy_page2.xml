@@ -8,21 +8,49 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="356dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="39dp"
-        android:text="¿ Que nombre recibe la feria mas grande del  mundio de Videojuegos?"
+        android:layout_width="300dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:text="¿ Que nombre recibe la feria mas grande\n del  mundio de Videojuegos?"
+        android:textAlignment="center"
         android:textColor="#EC2828"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_loanding2"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="reloj_de_arena.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="14dp"
+        android:text="0:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_loanding2" />
+
     <Button
-        android:id="@+id/BTN_aceptar"
+        android:id="@+id/aceptar"
         android:layout_width="155dp"
         android:layout_height="63dp"
         android:layout_marginTop="72dp"
-        android:onClick="onclick"
+        android:onClick="validar"
         android:text="ACEPTAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,13 +67,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BTN_aceptar" />
+        app:layout_constraintTop_toBottomOf="@+id/aceptar" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="269dp"
         android:layout_height="196dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="136dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4">
@@ -79,8 +107,8 @@
         android:id="@+id/animation_loanding"
         android:layout_width="127dp"
         android:layout_height="75dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="156dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"

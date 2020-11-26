@@ -22,6 +22,7 @@ public class easy_page1 extends AppCompatActivity {
     private RadioButton Rb1,Rb2, Rb3, Rb4;
     private TextView textView;
     private CountDownTimer countDownTimer;
+    private Button Btn_aceptar, Btn_siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,9 @@ public class easy_page1 extends AppCompatActivity {
         Rb3= findViewById(R.id.Rb3);
         Rb4= findViewById(R.id.Rb4);
 
-        textView = (TextView)findViewById(R.id.contador);
+        textView = findViewById(R.id.contador);
+        Btn_aceptar = findViewById(R.id.aceptar);
+        Btn_siguiente = (Button) findViewById(R.id.btn_siguiente);
 
             countDownTimer = new CountDownTimer(25000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -40,6 +43,8 @@ public class easy_page1 extends AppCompatActivity {
 
             public void onFinish() {
                 AlertDialog.Builder builder = new AlertDialog.Builder(easy_page1.this);
+                Btn_aceptar.setEnabled(false);
+                Btn_siguiente.setEnabled(true);
                 builder.setTitle("Importante");
                 builder.setMessage("¡Su tiempo limite ha acabado! :c");
                 builder.setPositiveButton("OK",null);
@@ -55,37 +60,29 @@ public class easy_page1 extends AppCompatActivity {
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setEnabled(false);
+            Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
-            boton2.setEnabled(true);
+            Btn_siguiente.setEnabled(true);
         }
         else if (Rb2.isChecked()==true){
             Rb2.setBackgroundColor(Color.rgb(255,0,0));
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setEnabled(false);
+            Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
-            boton2.setEnabled(true);
+            Btn_siguiente.setEnabled(true);
         }
         else if (Rb3.isChecked()==true){
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setEnabled(false);
+            Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
-            boton2.setEnabled(true);
+            Btn_siguiente.setEnabled(true);
         }
         else if (Rb4.isChecked()==true){
             Rb4.setBackgroundColor(Color.rgb(255,0,0));
             Rb3.setBackgroundColor(Color.rgb(0,128,0));
-            Button boton = (Button) findViewById(R.id.aceptar);
-            boton.setEnabled(false);
+            Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
-            Button boton2 = (Button) findViewById(R.id.btn_siguiente);
-            boton2.setEnabled(true);
+            Btn_siguiente.setEnabled(true);
         }
     }
 
