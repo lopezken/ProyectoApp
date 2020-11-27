@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Menu extends AppCompatActivity {
 
-    private TextView tv1,tv2;
+    private TextView tv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
