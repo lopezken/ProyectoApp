@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto">
-        <activity android:name=".easy_page5"></activity>
+        <activity android:name=".easy_page6"></activity>
+        <activity android:name=".easy_page5" />
+        <activity android:name=".easy_page4" />
         <activity android:name=".easy_page3" />
         <activity android:name=".easy_page2" />
         <activity android:name=".easy_page1" />

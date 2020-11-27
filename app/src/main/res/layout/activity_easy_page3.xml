@@ -44,17 +44,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-        <Button
-            android:id="@+id/btn_Siguiente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="24dp"
-            android:enabled="false"
-            android:onClick="siguiente"
-            android:text="Siguiente"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="24dp"
+        android:enabled="false"
+        android:onClick="s"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
         <RadioGroup
             android:id="@+id/radioGroup"

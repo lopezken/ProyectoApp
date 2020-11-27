@@ -3,7 +3,6 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class easy_page5 extends AppCompatActivity {
+public class easy_page6 extends AppCompatActivity {
 
     private RadioButton Rb1,Rb2, Rb3, Rb4;
     private TextView textView;
@@ -23,7 +22,7 @@ public class easy_page5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_easy_page5);
+        setContentView(R.layout.activity_easy_page6);
 
         Rb1 = findViewById(R.id.Rb1);
         Rb2 = findViewById(R.id.Rb2);
@@ -40,7 +39,7 @@ public class easy_page5 extends AppCompatActivity {
             }
 
             public void onFinish() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page5.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page6.this);
                 Btn_aceptar.setEnabled(false);
                 Btn_siguiente.setEnabled(true);
                 builder.setTitle("Importante");
@@ -51,32 +50,31 @@ public class easy_page5 extends AppCompatActivity {
             }
         }.start();
     }
-
     public void v(View view){
 
         if (Rb1.isChecked()==true){
             Rb1.setBackgroundColor(Color.rgb(255,0,0));
-            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+            Rb4.setBackgroundColor(Color.rgb(0,128,0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
         }
         else if (Rb2.isChecked()==true){
-            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+            Rb2.setBackgroundColor(Color.rgb(255,0,0));
+            Rb4.setBackgroundColor(Color.rgb(0,128,0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
         }
         else if (Rb3.isChecked()==true){
             Rb3.setBackgroundColor(Color.rgb(255,0,0));
-            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+            Rb4.setBackgroundColor(Color.rgb(0,128,0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
         }
         else if (Rb4.isChecked()==true){
-            Rb4.setBackgroundColor(Color.rgb(255,0,0));
-            Rb2.setBackgroundColor(Color.rgb(0,128,0));
+            Rb4.setBackgroundColor(Color.rgb(0,128,0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
@@ -84,7 +82,7 @@ public class easy_page5 extends AppCompatActivity {
     }
 
     public void siguiente(View view){
-        Intent i = new Intent(this, easy_page6.class);
-        startActivity(i);
+        // Intent i = new Intent(this, easy_page7.class);
+        //startActivity(i);
     }
 }

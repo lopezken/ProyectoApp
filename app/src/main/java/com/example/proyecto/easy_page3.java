@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
-
 import java.util.Locale;
 
 public class easy_page3 extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class easy_page3 extends AppCompatActivity {
         textView = findViewById(R.id.contador);
 
         Btn_aceptar = findViewById(R.id.btn_Aceptar);
-        Btn_siguiente = findViewById(R.id.btn_Siguiente);
+        Btn_siguiente = findViewById(R.id.btn_next);
 
         countDownTimer = new CountDownTimer(25000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -87,7 +86,7 @@ public class easy_page3 extends AppCompatActivity {
         }
     }
 
-    public void siguiente(View view) {
+    public void s(View view) {
         Intent i = new Intent(this, easy_page4.class);
         startActivity(i);
     }
