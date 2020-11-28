@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(MainActivity.this, Inicio.class);
+                Intent i = new Intent(MainActivity.this, DatosActivity.class);
                 Pair[] pairs = new Pair[2];
                 pairs[0]= new Pair<View, String>(logoimage,"logoImage");
                 pairs[1]= new Pair<View, String>(test_textview, "textTrans");

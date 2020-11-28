@@ -23,7 +23,7 @@
                 android:layout_marginLeft="100dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/descripcion"
-
+                android:transitionName="logoImage"
                 app:srcCompat="@drawable/logo" />
 
             <TextView
@@ -36,6 +36,7 @@
                 android:text="@string/nombre"
                 android:textSize="22sp"
                 android:textStyle="bold"
+                android:transitionName="textTrans"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
             <EditText

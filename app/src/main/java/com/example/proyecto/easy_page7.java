@@ -14,25 +14,26 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class easy_page6 extends AppCompatActivity {
+public class easy_page7 extends AppCompatActivity {
 
-    private RadioButton Rb1,Rb2, Rb3, Rb4;
+    private RadioButton Rb_1,Rb_2, Rb_3, Rb_4;
     private TextView textView;
     private CountDownTimer countDownTimer;
     private Button Btn_aceptar, Btn_siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_easy_page6);
+        setContentView(R.layout.activity_easy_page7);
 
-        Rb1 = findViewById(R.id.Rb1);
-        Rb2 = findViewById(R.id.Rb2);
-        Rb3= findViewById(R.id.Rb3);
-        Rb4= findViewById(R.id.Rb4);
+        Rb_1 = findViewById(R.id.Rb1);
+        Rb_2 = findViewById(R.id.Rb2);
+        Rb_3= findViewById(R.id.Rb3);
+        Rb_4= findViewById(R.id.Rb4);
 
         textView = findViewById(R.id.contador);
-        Btn_aceptar = findViewById(R.id.btnAceptar);
-        Btn_siguiente = (Button) findViewById(R.id.btnSiguiente);
+
+        Btn_aceptar = findViewById(R.id.btn_Aceptar);
+        Btn_siguiente = findViewById(R.id.btn_next);
 
         countDownTimer = new CountDownTimer(25000, 1000) {
             public void onTick(long millisUntilFinished) {
@@ -40,7 +41,7 @@ public class easy_page6 extends AppCompatActivity {
             }
 
             public void onFinish() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page6.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page7.this);
                 Btn_aceptar.setEnabled(false);
                 Btn_siguiente.setEnabled(true);
                 builder.setTitle("Importante");
@@ -51,39 +52,39 @@ public class easy_page6 extends AppCompatActivity {
             }
         }.start();
     }
-    public void v(View view){
+    public void v(View view) {
 
-        if (Rb1.isChecked()==true){
-            Rb1.setBackgroundColor(Color.rgb(255,0,0));
-            Rb4.setBackgroundColor(Color.rgb(0,128,0));
+        if ( Rb_1.isChecked() == true ) {
+            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
-        }
-        else if (Rb2.isChecked()==true){
-            Rb2.setBackgroundColor(Color.rgb(255,0,0));
-            Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
+        } else if ( Rb_2.isChecked() == true ) {
+            Rb_2.setBackgroundColor(Color.rgb(255, 0, 0));
+            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
-        }
-        else if (Rb3.isChecked()==true){
-            Rb3.setBackgroundColor(Color.rgb(255,0,0));
-            Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
+        } else if ( Rb_3.isChecked() == true ) {
+            Rb_3.setBackgroundColor(Color.rgb(255, 0, 0));
+            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
-        }
-        else if (Rb4.isChecked()==true){
-            Rb4.setBackgroundColor(Color.rgb(0,128,0));
+
+        } else if ( Rb_4.isChecked() == true ) {
+            Rb_4.setBackgroundColor(Color.rgb(255, 0, 0));
+            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
         }
     }
 
-    public void siguiente(View view){
-         Intent i = new Intent(this, easy_page7.class);
-        startActivity(i);
+    public void s(View view) {
+       // Intent i = new Intent(this, easy_page4.class);
+       // startActivity(i);
     }
 }
