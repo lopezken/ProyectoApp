@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class easy_page7 extends AppCompatActivity {
+public class easy_page8 extends AppCompatActivity {
 
     private RadioButton Rb_1,Rb_2, Rb_3, Rb_4;
     private TextView textView;
@@ -23,7 +23,7 @@ public class easy_page7 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_easy_page7);
+        setContentView(R.layout.activity_easy_page8);
 
         Rb_1 = findViewById(R.id.Rb1);
         Rb_2 = findViewById(R.id.Rb2);
@@ -41,7 +41,7 @@ public class easy_page7 extends AppCompatActivity {
             }
 
             public void onFinish() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page7.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page8.this);
                 Btn_aceptar.setEnabled(false);
                 Btn_siguiente.setEnabled(true);
                 builder.setTitle("Importante");
@@ -55,28 +55,28 @@ public class easy_page7 extends AppCompatActivity {
     public void v(View view) {
 
         if ( Rb_1.isChecked() == true ) {
-            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
+            Rb_1.setBackgroundColor(Color.rgb(255, 0, 0));
+            Rb_3.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
 
         } else if ( Rb_2.isChecked() == true ) {
             Rb_2.setBackgroundColor(Color.rgb(255, 0, 0));
-            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
+            Rb_3.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
 
         } else if ( Rb_3.isChecked() == true ) {
-            Rb_3.setBackgroundColor(Color.rgb(255, 0, 0));
-            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
+            Rb_3.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
 
         } else if ( Rb_4.isChecked() == true ) {
             Rb_4.setBackgroundColor(Color.rgb(255, 0, 0));
-            Rb_1.setBackgroundColor(Color.rgb(0, 128, 0));
+            Rb_3.setBackgroundColor(Color.rgb(0, 128, 0));
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
