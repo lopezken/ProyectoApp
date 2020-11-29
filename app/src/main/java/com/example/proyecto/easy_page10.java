@@ -3,7 +3,6 @@ package com.example.proyecto;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class easy_page9 extends AppCompatActivity {
+public class easy_page10 extends AppCompatActivity {
 
     private RadioButton Rb_1,Rb_2, Rb_3, Rb_4;
     private TextView textView;
@@ -23,7 +22,7 @@ public class easy_page9 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_easy_page9);
+        setContentView(R.layout.activity_easy_page10);
 
         Rb_1 = findViewById(R.id.Rb1);
         Rb_2 = findViewById(R.id.Rb2);
@@ -41,7 +40,7 @@ public class easy_page9 extends AppCompatActivity {
             }
 
             public void onFinish() {
-                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page9.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(easy_page10.this);
                 Btn_aceptar.setEnabled(false);
                 Btn_siguiente.setEnabled(true);
                 builder.setTitle("Importante");
@@ -80,11 +79,17 @@ public class easy_page9 extends AppCompatActivity {
             Btn_aceptar.setEnabled(false);
             countDownTimer.cancel();
             Btn_siguiente.setEnabled(true);
+            AlertDialog.Builder builder = new AlertDialog.Builder(easy_page10.this);
+            builder.setTitle("Aviso");
+            builder.setMessage("¡Correcto! Los trenes Electricos no echan humo");
+            builder.setPositiveButton("OK",null);
+            builder.create();
+            builder.show();
         }
     }
 
     public void s(View view) {
-        Intent i = new Intent(this, easy_page10.class);
-        startActivity(i);
+        //Intent i = new Intent(this, easy_page8.class);
+        //startActivity(i);
     }
 }

@@ -84,7 +84,7 @@ public class easy_page8 extends AppCompatActivity {
     }
 
     public void s(View view) {
-        Intent i = new Intent(this, easy_page8.class);
+        Intent i = new Intent(this, easy_page9.class);
         startActivity(i);
     }
 }
